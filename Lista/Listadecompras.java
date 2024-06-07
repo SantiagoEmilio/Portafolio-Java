@@ -17,7 +17,7 @@ public class Listadecompras {
 
         switch (r) {
             case 1:
-                crearlista();
+                listadeNombre();
                 break;
 
             case 2:
@@ -28,7 +28,7 @@ public class Listadecompras {
              //Agregar  lista Vacia
             String rP;
             double rPc;
-        }
+           }
 
             for (int i = 1; i <= 10; i++) {
                 Scanner item = new Scanner(System.in);
@@ -36,12 +36,13 @@ public class Listadecompras {
                 String rP = item.nextLine();
                 System.out.print("Precio: ");
                 double rPc = item.nextDouble();
-                listaNombre.add(rP);
-            }
-
-        }
-                System.out.println(listaNombre);
-
+                listadeNombre.add(rP);
             }
 
 
+                System.out.println(listadeNombre);
+
+            }
+
+
+    }
