@@ -1,48 +1,52 @@
 package Lista;
-import opciones.ListaOpciones;
+import mis_Metodos.ListaOpciones;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
 
 public class Listadecompras {
+    public static void programa () {
+        String[] ListaDeOpciones = {
+                "Lista de compras", "Salir"
+        };
+        ListaOpciones.cargarOpciones(ListaDeOpciones);
 
-    public static String[] opciones6 = {"Lista de compras", "Salir"};
+        Scanner into0pcion = new Scanner(System.in);
+        System.out.print("[?]");
+        int opcion = into0pcion.nextInt();
 
-    public static void programas() {
-        ListaOpciones.cargarOpciones(opciones6);
-
-        Scanner opcion = new Scanner(System.in);
-        System.out.print("[?]: ");
-        int r = opcion.nextInt();
-
-        switch (r) {
+        switch (opcion){
             case 1:
-                listadeNombre();
+                crearLista();
                 break;
-
             case 2:
                 System.out.println("salir");
                 break;
 
-
-             //Agregar  lista Vacia
-            String rP;
-            double rPc;
-           }
-
-            for (int i = 1; i <= 10; i++) {
-                Scanner item = new Scanner(System.in);
-                System.out.print("Productos: ");
-                String rP = item.nextLine();
-                System.out.print("Precio: ");
-                double rPc = item.nextDouble();
-                listadeNombre.add(rP);
-            }
-
-
-                System.out.println(listadeNombre);
-
-            }
-
-
+        }
     }
+    public static void crearLista(){
+        List<String> ListaNombre = new ArrayList<>();
+        List<Double> listaPrecio = new ArrayList<>();
+
+        // pedir un producto y su precio
+
+        String rP;
+        double rPc;
+
+        for (int i=1; i<=3;i++){
+            Scanner item = new Scanner(System.in);
+            System.out.println("producto: ");
+            rP = item.nextLine();
+            System.out.println("precio");
+            rPc = item.nextDouble();
+
+            // agrega a la lista vacia
+            ListaNombre.add(rP);
+            listaPrecio.add(rPc);
+        }
+
+        //mostrar lista
+        System.out.println(ListaNombre +" -->"+listaPrecio);
+    }
+}

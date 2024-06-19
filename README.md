@@ -38,7 +38,7 @@ Descripción: Contiene métodos y operaciones matemáticas comunes, como cálcul
 
 ## Opciones
 *Archivo*: `ListaOpciones.java`
-Descripción: Maneja una lista de opciones seleccionables, útil para menús y selección de configuraciones.
+Descripción: Maneja una lista de mis_Metodos seleccionables, útil para menús y selección de configuraciones.
 
 
 ## Programas

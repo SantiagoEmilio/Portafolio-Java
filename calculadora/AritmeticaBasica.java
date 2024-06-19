@@ -1,10 +1,10 @@
-package maths;
-import opciones.ListaOpciones;
+package calculadora;
+import mis_Metodos.ListaOpciones;
 
 import java.util.Scanner;
 
 
-public class Matematicas {
+public class AritmeticaBasica {
 
     public static void matexd(){
 

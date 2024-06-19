@@ -1,19 +1,26 @@
-import Grados.FcCf;
+import colegio.Escuela;
+import colegio.PrimeroPrimaria;
+import conversor.FcCf;
 import Lista.Listadecompras;
+import calculadora.CalcularEdad;
 import interfaz_grafica.Banner;
-import opciones.ListaOpciones;
-import programas.IMC;
+import libros.Biblioteca;
+import mis_Metodos.ListaOpciones;
+import IMC.IMC;
 import java.util.Scanner;
-import maths.Matematicas;
-import Conversor_de_unidades.unidades;
-import opciones.ListaOpciones;
+import calculadora.AritmeticaBasica;
+import mis_Metodos.mismetodos;
 
+
+import conversor.unidades;
+import conversor.conversorDeMonedas;
 public class Main {
-    public static void main(String[] args) {
+    public static void
+    main(String[] args) {
 
         //lista de opciones
              String[] listaDeOpciones = {
-                "Calculadora", "IMC",
+                     "calculadora", "IMC",
                 "Farenheit / Celsius", "Calcular edad",
                 "Grados", "Opción_6",
                 "Opción_7", "Opción_8",
@@ -31,28 +38,34 @@ public class Main {
             switch (opcion) {
 
                 case 1:
-                    Matematicas.matexd();
+                    AritmeticaBasica.matexd();
                     break;
                 case 2:
-
                     IMC.programaIMC();
                     break;
                 case 3:
-                    break;
-
-                case 4:
-                    unidades.proceso();
-                    programas = false;
-                    break;
-
-                case 5:
                     FcCf.gradosxd();
                     break;
 
+                case 4:
+                                        break;
+                case 5:
+                    CalcularEdad.proceso();
+                    break;
                 case 6:
-                    Listadecompras.programas();
+                    Listadecompras.programa();
                     break;
 
+                case 7:
+                    conversorDeMonedas.programa();
+                    break;
+
+                case 8:
+                    Biblioteca.programa();
+                    break;
+                case 9:
+                    PrimeroPrimaria.programa();
+                    break;
                 case 10:
                     programas = false;
                     break;
