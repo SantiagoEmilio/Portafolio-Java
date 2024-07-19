@@ -64,10 +64,15 @@ public class PrimeroPrimaria {
 
 
  */
-        System.out.println(estudiante1.toString());
-        System.out.println(estudiante2.toString());
-        System.out.println(estudiante3.toString());
-        System.out.println(estudiante4.toString());
+        System.out.println(estudiante1.getNombre());
+        System.out.println(estudiante2.getNombre());
+        System.out.println(estudiante3.getNombre());
+        System.out.println(estudiante4.getNombre());
+
+        System.out.println(estudiante1.getNombre());
+        System.out.println(estudiante2.getNombre());
+        System.out.println(estudiante3.getNombre());
+        System.out.println(estudiante4.getNombre());
 
         System.out.println(curso1.toString());
         System.out.println(curso2.toString());
